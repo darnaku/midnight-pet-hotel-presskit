@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Pet Hotel · Press Kit</title>
+<meta name="description" content="Press kit for Midnight Pet Hotel, a cozy management game about running a hotel for pets. By Darnaku. Windows and Linux, $4.99 on itch.io.">
+<meta property="og:title" content="Midnight Pet Hotel · Press Kit">
+<meta property="og:description" content="A cozy night shift, one fussy guest at a time. Run a hotel for pets through 25 busy nights.">
+<link rel="icon" type="image/png" href="img/icon_256.png">
+<style>
+  @font-face {
+    font-family: "Kenney Future";
+    src: url("assets/KenneyFuture.ttf") format("truetype");
+    font-display: swap;
+  }
+  :root {
+    --bg: #121329;
+    --bg2: #1a1c38;
+    --card: #1f2246;
+    --line: #2f3368;
+    --text: #eceeff;
+    --muted: #aeb1da;
+    --gold: #ffc94a;
+    --gold-dark: #e0a92a;
+    --lilac: #c9b8ff;
+    --todo: #ff6f9a;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg) radial-gradient(ellipse 120% 600px at 50% -120px, #2a2460 0%, var(--bg) 70%) no-repeat;
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--gold); text-underline-offset: 3px; }
+  a:hover { color: #ffe08f; }
+  img, video, iframe { display: block; max-width: 100%; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+
+  h1, h2, h3 {
+    font-family: "Kenney Future", system-ui, sans-serif;
+    font-weight: normal;
+    letter-spacing: .06em;
+    line-height: 1.2;
+  }
+  h2 { color: var(--lilac); font-size: 1.35rem; margin: 0 0 18px; }
+  h3 { color: var(--gold); font-size: 1rem; margin: 0 0 6px; }
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  p { margin: 0 0 14px; }
+  .muted { color: var(--muted); }
+  .small { font-size: .9rem; }
+
+  /* header */
+  header { padding: 48px 0 36px; text-align: center; }
+  header h1 { margin: 0; }
+  header h1 img { margin: 0 auto; width: min(680px, 100%); height: auto; }
+  .tagline { font-size: 1.2rem; color: var(--lilac); margin: 18px 0 26px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: 10px;
+    font-weight: 600; text-decoration: none; border: 2px solid var(--gold);
+    color: var(--gold); background: transparent;
+  }
+  .btn:hover { background: #ffc94a1a; color: var(--gold); }
+  .btn.primary { background: var(--gold); color: #1a1530; border-color: var(--gold); }
+  .btn.primary:hover { background: #ffd66e; color: #1a1530; }
+
+  /* at a glance */
+  .glance { display: grid; grid-template-columns: 1fr 1.15fr; gap: 32px; align-items: start; }
+  .glance img { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 10px 40px #0007; }
+  .lead { font-size: 1.12rem; }
+  .facts {
+    display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; margin: 20px 0 0;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px;
+  }
+  .facts dt { color: var(--muted); }
+  .facts dd { margin: 0; }
+  .sale { display: inline-block; margin-top: 2px; font-size: .9rem; color: #1a1530; background: var(--lilac); border-radius: 6px; padding: 0 8px; }
+
+  /* trailer */
+  .video { position: relative; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: #000; box-shadow: 0 10px 40px #0007; }
+  .video video, .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+  /* features */
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: start; }
+  .features ul { list-style: none; margin: 0; padding: 0; }
+  .features li { position: relative; padding-left: 26px; margin-bottom: 16px; }
+  .features li::before {
+    content: ""; position: absolute; left: 4px; top: .55em; width: 10px; height: 10px;
+    border-radius: 50%; background: var(--gold); box-shadow: 0 0 10px #ffc94a88;
+  }
+  .features li strong { color: var(--gold); }
+  .features figure { margin: 0; }
+  .features figure img { width: 100%; height: auto; border-radius: 14px; box-shadow: 0 10px 40px #0007; }
+  figcaption { color: var(--muted); font-size: .9rem; margin-top: 8px; }
+
+  /* screenshots */
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .shots figure { margin: 0; }
+  .shots a { display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+  .shots a:hover { border-color: var(--gold); }
+  .shots img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+
+  /* fact sheet */
+  table { width: 100%; border-collapse: collapse; }
+  .factsheet th, .factsheet td { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .factsheet th { color: var(--muted); font-weight: normal; width: 34%; }
+  .factsheet tr:last-child th, .factsheet tr:last-child td { border-bottom: 0; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 6px 6px; }
+
+  /* how it was made */
+  .made { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; }
+  .made div { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+  .made p { margin: 0; }
+
+  /* downloads */
+  .downloads td, .downloads th { text-align: left; vertical-align: top; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .downloads th { color: var(--muted); font-weight: normal; font-size: .9rem; }
+  .downloads ul { margin: 0; padding-left: 18px; }
+  .downloads li { overflow-wrap: anywhere; }
+  .downloads td:first-child { white-space: nowrap; }
+
+  /* contact */
+  .contact { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 24px; }
+  .contact p:last-child { margin-bottom: 0; }
+  .todo {
+    color: #ffe1ea; background: #ff6f9a26; outline: 2px dashed var(--todo);
+    border-radius: 4px; padding: 0 6px; font-weight: 600;
+  }
+
+  footer { padding: 30px 0 50px; border-top: 1px solid var(--line); text-align: center; color: var(--muted); font-size: .9rem; }
+  footer img { width: 48px; height: 48px; margin: 0 auto 10px; }
+
+  @media (max-width: 820px) {
+    .glance, .features, .made { grid-template-columns: 1fr; }
+    .shots { grid-template-columns: repeat(2, 1fr); }
+    .factsheet th { width: 40%; }
+    .downloads tr:first-child { display: none; }
+    .downloads td { display: block; }
+    .downloads td:first-child { border-bottom: 0; padding-bottom: 0; }
+  }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .shots { grid-template-columns: 1fr; }
+    .factsheet th, .factsheet td { display: block; width: auto; padding: 4px 10px; border: 0; }
+    .factsheet td { padding-bottom: 12px; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+  }
+</style>
+</head>
+<body>
+
+<header class="wrap">
+  <h1><img src="img/logo.png" width="1200" height="274" alt="Midnight Pet Hotel"></h1>
+  <p class="tagline">A cozy night shift, one fussy guest at a time.</p>
+  <div class="buttons">
+    <a class="btn primary" href="https://darnaku.itch.io/midnight-pet-hotel">Get it on itch.io</a>
+    <a class="btn" href="#trailer">Watch the trailer</a>
+    <a class="btn" href="https://github.com/darnaku/midnight-pet-hotel-presskit/releases/download/v1.0/MidnightPetHotel_PressKit_v1.0.zip">Download press kit (67.4 MB)</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="about">
+  <div class="glance">
+    <img src="img/cover.jpg" width="1260" height="1000" alt="Midnight Pet Hotel cover art: a penguin, a panda, the caretaker, a dog and a cat in front of the hotel">
+    <div>
+      <h2>The game in 30 seconds</h2>
+      <p class="lead"><strong>Midnight Pet Hotel</strong> is a cozy management game about running a hotel for pets from sundown to sunrise.</p>
+      <p>Check in sleepy cats, energetic puppies, picky penguins and plenty of other guests, find each of them a room that suits them, and keep everyone fed, rested and entertained until morning.</p>
+      <p>Over 25 nights, a tiny three-room hotel grows into a twelve-room business with its own night crew, all building up to the Grand Midnight Gala.</p>
+      <dl class="facts">
+        <dt>Developer</dt><dd>Darnaku</dd>
+        <dt>Released</dt><dd>October 22, 2026</dd>
+        <dt>Price</dt><dd>$4.99 USD</dd>
+        <dt>Platforms</dt><dd>Windows and Linux</dd>
+        <dt>Demo</dt><dd>Free, the first three nights</dd>
+        <dt>Store</dt><dd><a href="https://darnaku.itch.io/midnight-pet-hotel">darnaku.itch.io/midnight-pet-hotel</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="trailer">
+  <h2>Trailer</h2>
+  <div class="video">
+    <iframe src="https://www.youtube-nocookie.com/embed/79I5sP8GVrY" title="Midnight Pet Hotel gameplay trailer" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+  </div>
+  <p class="muted small" style="margin-top:12px">Gameplay trailer, about 80 seconds. Every shot is captured in the game. <a href="https://www.youtube.com/watch?v=79I5sP8GVrY">Watch on YouTube</a> · the 1080p MP4 is in the press kit ZIP.</p>
+</section>
+
+<section id="features">
+  <h2>What you do</h2>
+  <div class="features">
+    <ul>
+      <li><strong>Find every guest the right room.</strong> Each room shows Good fit, Okay or Poor fit, with the reason: a noisy neighbour, a roommate who won't get along, a penguin with no igloo bed.</li>
+      <li><strong>Keep them happy until morning.</strong> Bowls run empty, rooms get messy and boredom sets in. Guests pay at checkout for their whole stay, and good stays bring tips, reviews and more guests.</li>
+      <li><strong>Furnish and grow.</strong> Arrange furniture room by room, add upgrades, and renovate the East Wing to go from three rooms to twelve.</li>
+      <li><strong>Hire a night crew.</strong> Five staff to clean, cook, play and groom. You decide where they work first.</li>
+      <li><strong>25 nights in five chapters.</strong> Thunderstorms, a late-night rush, a celebrity guest, an adoption fair and a very thorough health inspector, ending at the Grand Midnight Gala.</li>
+      <li><strong>Play your way.</strong> Cozy Mode for a relaxed game, Management Mode for more of a challenge, and Endless Mode after the finale.</li>
+    </ul>
+    <figure>
+      <img src="img/gameplay.gif" width="1280" height="720" alt="Looping gameplay: the hotel at night, busy with guests and staff">
+      <figcaption>A busy night at the hotel (gameplay GIF).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="screenshots">
+  <h2>Screenshots</h2>
+  <p class="muted small">All 1920×1080, captured in the released game with no retouching. Click any image for the full size.</p>
+  <div class="shots">
+    <figure><a href="img/screenshots/01_full_hotel.jpg"><img src="img/thumbs/01_full_hotel.jpg" width="1920" height="1080" loading="lazy" alt="A full hotel on a busy night"></a><figcaption>A full hotel on a busy night</figcaption></figure>
+    <figure><a href="img/screenshots/02_check_in.jpg"><img src="img/thumbs/02_check_in.jpg" width="1920" height="1080" loading="lazy" alt="Checking in a guest: every room shows how well it fits"></a><figcaption>Checking in a guest: every room shows how well it fits</figcaption></figure>
+    <figure><a href="img/screenshots/03_night_crew.jpg"><img src="img/thumbs/03_night_crew.jpg" width="1920" height="1080" loading="lazy" alt="The night crew at work while guests eat and play"></a><figcaption>The night crew at work while guests eat and play</figcaption></figure>
+    <figure><a href="img/screenshots/04_late_night_rush.jpg"><img src="img/thumbs/04_late_night_rush.jpg" width="1920" height="1080" loading="lazy" alt="The late-night rush, when everyone turns up at once"></a><figcaption>The late-night rush, when everyone turns up at once</figcaption></figure>
+    <figure><a href="img/screenshots/05_arrange_furniture.jpg"><img src="img/thumbs/05_arrange_furniture.jpg" width="1920" height="1080" loading="lazy" alt="Arranging a room&#x27;s furniture"></a><figcaption>Arranging a room&#x27;s furniture</figcaption></figure>
+    <figure><a href="img/screenshots/06_celebrity_guest.jpg"><img src="img/thumbs/06_celebrity_guest.jpg" width="1920" height="1080" loading="lazy" alt="A celebrity at the front desk, and a regular with a favourite room"></a><figcaption>A celebrity at the front desk, and a regular with a favourite room</figcaption></figure>
+    <figure><a href="img/screenshots/07_thunderstorm.jpg"><img src="img/thumbs/07_thunderstorm.jpg" width="1920" height="1080" loading="lazy" alt="A thunderstorm night"></a><figcaption>A thunderstorm night</figcaption></figure>
+    <figure><a href="img/screenshots/08_gala_award.jpg"><img src="img/thumbs/08_gala_award.jpg" width="1920" height="1080" loading="lazy" alt="The Grand Midnight Gala, and a Gold award"></a><figcaption>The Grand Midnight Gala, and a Gold award</figcaption></figure>
+    <figure><a href="img/screenshots/09_morning_report.jpg"><img src="img/thumbs/09_morning_report.jpg" width="1920" height="1080" loading="lazy" alt="The morning report after a shift"></a><figcaption>The morning report after a shift</figcaption></figure>
+  </div>
+</section>
+
+<section id="facts">
+  <h2>Fact sheet</h2>
+  <div class="card">
+    <table class="factsheet">
+      <tr><th>Title</th><td>Midnight Pet Hotel</td></tr>
+      <tr><th>Developer</th><td>Darnaku</td></tr>
+      <tr><th>Genre</th><td>Cozy management / simulation</td></tr>
+      <tr><th>Platforms</th><td>Windows 10/11 (64-bit) and Linux (64-bit)</td></tr>
+      <tr><th>Release date</th><td>October 22, 2026</td></tr>
+      <tr><th>Price</th><td>$4.99 USD</td></tr>
+      <tr><th>Demo</th><td>Free three-night demo (the game's first three nights), on the same page</td></tr>
+      <tr><th>Game</th><td>25-night campaign in five chapters · two difficulty modes (Cozy and Management) · Endless Mode after the finale</td></tr>
+      <tr><th>Players</th><td>Single-player · mouse and keyboard</td></tr>
+      <tr><th>Language</th><td>English</td></tr>
+      <tr><th>Engine</th><td>Godot 4.7.2</td></tr>
+      <tr><th>Download size</th><td>65 MB (Windows) · 56 MB (Linux)</td></tr>
+      <tr><th>Graphics</th><td>A GPU with Vulkan support (Direct3D 12 also works on Windows)</td></tr>
+      <tr><th>Store</th><td><a href="https://darnaku.itch.io/midnight-pet-hotel">https://darnaku.itch.io/midnight-pet-hotel</a></td></tr>
+      <tr><th>Trailer</th><td><a href="https://www.youtube.com/watch?v=79I5sP8GVrY">https://www.youtube.com/watch?v=79I5sP8GVrY</a></td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="made">
+  <h2>How it was made</h2>
+  <p>Midnight Pet Hotel was made by Darnaku with a lot of help from AI tools. Here's who did what.</p>
+  <div class="made">
+    <div>
+      <h3>Darnaku</h3>
+      <p>Came up with the game and its ideas, set the direction, tested it throughout, gave the feedback that shaped it, and approved each change and the final release.</p>
+    </div>
+    <div>
+      <h3>Claude Code</h3>
+      <p>Anthropic's AI coding assistant was used extensively for the programming and implementation, working from Darnaku's direction and feedback. The logo, trailer edit and store images were also put together this way, from real gameplay captures.</p>
+    </div>
+    <div>
+      <h3>Music</h3>
+      <p>The original soundtrack, ten pieces and four jingles, was produced by Darnaku with ElevenLabs Music, then edited and looped for the game.</p>
+    </div>
+    <div>
+      <h3>Art and sound effects</h3>
+      <p>The 3D pets, furniture, interface and sound effects come from <a href="https://kenney.nl">Kenney</a>'s free CC0 asset packs. The pet furniture, icons and app icon were made for this game. Built with <a href="https://godotengine.org">Godot Engine</a>.</p>
+    </div>
+  </div>
+  <p class="muted small">Screenshots and trailer footage show the game exactly as it plays.</p>
+</section>
+
+<section id="media">
+  <h2>Media files</h2>
+  <p>One ZIP with the logo, cover art, all nine screenshots at full quality, the gameplay GIF, the 1080p trailer and a plain-text fact sheet. You're welcome to use any of it in articles, videos and streams about Midnight Pet Hotel.</p>
+  <p><a class="btn primary" href="https://github.com/darnaku/midnight-pet-hotel-presskit/releases/download/v1.0/MidnightPetHotel_PressKit_v1.0.zip">Download the press kit (67.4 MB)</a></p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact">
+    <p><strong>Press:</strong> <a href="mailto:darnakuappdev@proton.me">darnakuappdev@proton.me</a></p>
+    <p><strong>Review copies:</strong> if you'd like to cover the game, get in touch and ask for a review key.</p>
+    <p><strong>Videos and streams:</strong> You&#x27;re welcome to record, stream, review, and monetize videos featuring Midnight Pet Hotel. Please link to the game when possible. The soundtrack may be included as part of gameplay, but not redistributed separately.</p>
+    <p class="muted">Questions, bug reports and player feedback are also welcome in the comments on the <a href="https://darnaku.itch.io/midnight-pet-hotel">itch.io page</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <img src="img/icon_256.png" width="1024" height="1024" alt="">
+  Midnight Pet Hotel by Darnaku · Press kit, October 2026
+</footer>
+
+</body>
+</html>
